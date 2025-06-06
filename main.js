@@ -25,3 +25,19 @@ const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVXYWZ';
 const letrasMinusculas = 'abcdefghijklmnopqrstuvxywz';
 const numeros = '0123456789';
 const simbolos = '!@%*?';
+geraSenha();
+
+function geraSenha() {
+    let alfabeto = '';
+    if (checkbox[0].checked) {
+        alfabeto = alfabeto + letrasMaiusculas;
+    }
+    if (checkbox[1].checked) {
+        alfabeto = alfabeto + letrasMinusculas;
+    }
+    if (checkbox[2].checked) {
+        alfabeto = alfabeto + numeros;
+    }
+    if (checkbox[3].checked) {
+        alfabeto = alfabeto + simbolos;
+    }
