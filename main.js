@@ -64,12 +64,11 @@ function geraSenha() {
 }
 function classificaSenha(){
     forcaSenha.classList.remove('fraca','media','forte');
-    if (tamanhoSenha > 11){
-forcaSenha.classList.add('forte');
-}
-else {
-forcaSenha.classList.add('media');
-}
-{
-    forcaSenha.classList.add('forte');
-}
+        if (tamanhoSenha > 11){
+           forcaSenha.classList.add('forte');
+        } else if (tamanhoSenha > 5 && tamanhoSenha < 12) {
+            forcaSenha.classList.add('media');
+        } else if (tamanhoSenha <= 5){
+            forcaSenha.classList.add('fraca');
+        }
+}   
