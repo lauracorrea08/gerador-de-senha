@@ -67,6 +67,10 @@ function classificaSenha(){
     if (tamanhoSenha > 11){
 forcaSenha.classList.add('forte');
 }
+else {
+forcaSenha.classList.add('media');
+}
+{
     forcaSenha.classList.add('forte');
 
 }
